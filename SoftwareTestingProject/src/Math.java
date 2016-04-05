@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+//package java.lang;
 import java.util.Random;
 
 import sun.misc.FloatConsts;
