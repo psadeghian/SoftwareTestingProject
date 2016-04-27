@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="SCHS-CMP010" id="0" name="SimpleTest" package="com.example.simple" skipped="0" tests="5" time="0.083" timestamp="2016-04-27T18:11:01">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="coverage.summaryxml.dir" value="reports/cobertura-summary-xml" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="os.name" value="Windows 8.1" />
+
+          <property name="sun.boot.class.path" value="C:\Java\jdk1.8.0_31\jre\lib\resources.jar;C:\Java\jdk1.8.0_31\jre\lib\rt.jar;C:\Java\jdk1.8.0_31\jre\lib\sunrsasign.jar;C:\Java\jdk1.8.0_31\jre\lib\jsse.jar;C:\Java\jdk1.8.0_31\jre\lib\jce.jar;C:\Java\jdk1.8.0_31\jre\lib\charsets.jar;C:\Java\jdk1.8.0_31\jre\lib\jfr.jar;C:\Java\jdk1.8.0_31\jre\classes" />
+
+          <property name="reports.html.dir" value="reports/junit-html" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="C:\apache-ant-1.9.7" />
+
+          <property name="java.runtime.version" value="1.8.0_31-b13" />
+
+          <property name="cobertura.dir" value="../.." />
+
+          <property name="user.name" value="SCHS" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="C:\Java\jdk1.8.0_31\jre\bin" />
+
+          <property name="reports.dir" value="reports" />
+
+          <property name="ant.project.default-target" value="coverage" />
+
+          <property name="ant.project.name" value="cobertura.examples.basic" />
+
+          <property name="ant.file.cobertura.examples.basic" value="C:\Users\SCHS\Desktop\cobertura-2.1.1\examples\basic\build.xml" />
+
+          <property name="java.version" value="1.8.0_31" />
+
+          <property name="coverage.html.dir" value="reports/cobertura-html" />
+
+          <property name="user.timezone" value="America/New_York" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="java.endorsed.dirs" value="C:\Java\jdk1.8.0_31\jre\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="amd64" />
+
+          <property name="sun.jnu.encoding" value="Cp1252" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="classes.dir" value="classes" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="C:\Java\jdk1.8.0_31\jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file.type.cobertura.examples.basic" value="file" />
+
+          <property name="ant.file" value="C:\Users\SCHS\Desktop\cobertura-2.1.1\examples\basic\build.xml" />
+
+          <property name="os.version" value="6.3" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.version" value="25.31-b07" />
+
+          <property name="user.variant" value="" />
+
+          <property name="ant.library.dir" value="C:\apache-ant-1.9.7\lib" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="sun.stdout.encoding" value="cp437" />
+
+          <property name="user.script" value="" />
+
+          <property name="reports.xml.dir" value="reports/junit-xml" />
+
+          <property name="user.home" value="C:\Users\SCHS" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="coverage.xml.dir" value="reports/cobertura-xml" />
+
+          <property name="java.library.path" value="C:\Java\jdk1.8.0_31\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Git\cmd;C:\Java\jdk1.8.0_31\bin;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\nodejs\;C:\apache-ant-1.9.7\bin;C:\Users\SCHS\AppData\Roaming\npm;." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.example.simple.SimpleTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\SCHS\Desktop\cobertura-2.1.1\examples\basic\reports\junit-xml\TEST-com.example.simple.SimpleTest.xml crashfile=C:\Users\SCHS\Desktop\cobertura-2.1.1\examples\basic\junitvmwatcher6601465501433317030.properties propsfile=C:\Users\SCHS\Desktop\cobertura-2.1.1\examples\basic\junit2702902493585852076.properties" />
+
+          <property name="java.class.path" value="C:\Users\SCHS\Desktop\cobertura-2.1.1\examples\basic\instrumented;C:\Users\SCHS\Desktop\cobertura-2.1.1\examples\basic\classes;C:\Users\SCHS\Desktop\cobertura-2.1.1\cobertura-2.1.1-javadoc.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\cobertura-2.1.1-sources.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\cobertura-2.1.1.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\asm-5.0.1.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\asm-analysis-5.0.1.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\asm-commons-5.0.1.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\asm-tree-5.0.1.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\asm-util-5.0.1.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\commons-lang3-3.3.2.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\hamcrest-core-1.3.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\jaxen-1.1.4.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\jetty-6.1.14.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\jetty-util-6.1.14.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\junit-4.11.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\logback-classic-1.0.13.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\logback-core-1.0.13.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\oro-2.0.8.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\servlet-api-2.5-6.1.14.jar;C:\Users\SCHS\Desktop\cobertura-2.1.1\lib\slf4j-api-1.7.5.jar;C:\apache-ant-1.9.7\lib\ant-launcher.jar;C:\apache-ant-1.9.7\lib\ant.jar;C:\apache-ant-1.9.7\lib\ant-junit.jar;C:\apache-ant-1.9.7\lib\ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.7 compiled on April 9 2016" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="" />
+
+          <property name="java.io.tmpdir" value="C:\Users\SCHS\AppData\Local\Temp\" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="instrumented.dir" value="instrumented" />
+
+          <property name="java.ext.dirs" value="C:\Java\jdk1.8.0_31\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+
+          <property name="user.dir" value="C:\Users\SCHS\Desktop\cobertura-2.1.1\examples\basic" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="basedir" value="C:\Users\SCHS\Desktop\cobertura-2.1.1\examples\basic" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="C:\apache-ant-1.9.7\lib\ant.jar" />
+
+          <property name="file.encoding" value="Cp1252" />
+
+          <property name="sun.stderr.encoding" value="cp437" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="src.dir" value="src" />
+
+          <property name="ant.project.invoked-targets" value="coverage" />
+
+      </properties>
+
+      <testcase classname="com.example.simple.SimpleTest" name="testNaN" time="0.001" />
+
+      <testcase classname="com.example.simple.SimpleTest" name="testZero" time="0.003" />
+
+      <testcase classname="com.example.simple.SimpleTest" name="testNegInfinity" time="0.0" />
+
+      <testcase classname="com.example.simple.SimpleTest" name="testNegativeDouble" time="0.0" />
+
+      <testcase classname="com.example.simple.SimpleTest" name="testPositiveDouble" time="0.0" />
+
+      <system-out><![CDATA[14:11:01,230 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+14:11:01,230 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+14:11:01,231 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/C:/Users/SCHS/Desktop/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+14:11:01,232 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+14:11:01,232 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/Users/SCHS/Desktop/cobertura-2.1.1/cobertura-2.1.1.jar!/logback.xml]
+14:11:01,232 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/Users/SCHS/Desktop/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+14:11:01,268 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@2ff4f00f - URL [jar:file:/C:/Users/SCHS/Desktop/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml] is not of type file
+14:11:01,365 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+14:11:01,383 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:11:01,401 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+14:11:01,438 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:11:01,521 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [net.sourceforge.cobertura] to INFO
+14:11:01,521 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+14:11:01,521 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+14:11:01,522 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+14:11:01,525 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@c818063 - Registering current configuration as safe fallback point
+
+]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>
