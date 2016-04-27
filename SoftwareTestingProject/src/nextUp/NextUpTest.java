@@ -1,4 +1,4 @@
-package testing_package;
+package nextUp;
 
 import static org.junit.Assert.*;
 
