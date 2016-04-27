@@ -1,3 +1,4 @@
+package testing_package;
 /*
  * Copyright (c) 1994, 2013, Oracle and/or its affiliates. All rights reserved.
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
@@ -2070,8 +2071,7 @@ public final class Math {
             return d;
         else {
             d += 0.0d;
-            return Double.longBitsToDouble(Double.doubleToRawLongBits(d) +
-                                           ((d >= 0.0d)?+1L:-1L));
+            return Double.longBitsToDouble(Double.doubleToRawLongBits(d) + ((d >= 0.0d)?+1L:-1L));
         }
     }
 
@@ -2367,4 +2367,5 @@ public final class Math {
                                      (FloatConsts.SIGNIFICAND_WIDTH-1))
                                     & FloatConsts.EXP_BIT_MASK);
     }
+    
 }
