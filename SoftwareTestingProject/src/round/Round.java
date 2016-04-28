@@ -1,28 +1,5 @@
-package nextUp;
-/*
- * Copyright (c) 1994, 2013, Oracle and/or its affiliates. All rights reserved.
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
- *
- * This code is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 only, as
- * published by the Free Software Foundation.  Oracle designates this
- * particular file as subject to the "Classpath" exception as provided
- * by Oracle in the LICENSE file that accompanied this code.
- *
- * This code is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
- * version 2 for more details (a copy is included in the LICENSE file that
- * accompanied this code).
- *
- * You should have received a copy of the GNU General Public License version
- * 2 along with this work; if not, write to the Free Software Foundation,
- * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- *
- * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA
- * or visit www.oracle.com if you need additional information or have any
- * questions.
- */
+package round;
+
 
 //package java.lang;
 import java.util.Random;
@@ -103,44 +80,59 @@ import sun.misc.DoubleConsts;
  * @since   JDK1.0
  */
 
-public class NextUp {
+public class Round {
 
     /**
      * Don't let anyone instantiate this class.
      */
-    //private NextUp() {}
-
+    //private Math() {}
+	
     /**
-     * Returns the floating-point value adjacent to {@code d} in
-     * the direction of positive infinity.  This method is
-     * semantically equivalent to {@code nextAfter(d,
-     * Double.POSITIVE_INFINITY)}; however, a {@code nextUp}
-     * implementation may run faster than its equivalent
-     * {@code nextAfter} call.
+     * Returns the closest {@code long} to the argument, with ties
+     * rounding to positive infinity.
      *
-     * <p>Special Cases:
-     * <ul>
-     * <li> If the argument is NaN, the result is NaN.
+     * <p>Special cases:
+     * <ul><li>If the argument is NaN, the result is 0.
+     * <li>If the argument is negative infinity or any value less than or
+     * equal to the value of {@code Long.MIN_VALUE}, the result is
+     * equal to the value of {@code Long.MIN_VALUE}.
+     * <li>If the argument is positive infinity or any value greater than or
+     * equal to the value of {@code Long.MAX_VALUE}, the result is
+     * equal to the value of {@code Long.MAX_VALUE}.</ul>
      *
-     * <li> If the argument is positive infinity, the result is
-     * positive infinity.
-     *
-     * <li> If the argument is zero, the result is
-     * {@link Double#MIN_VALUE}
-     *
-     * </ul>
-     *
-     * @param d starting floating-point value
-     * @return The adjacent floating-point value closer to positive
-     * infinity.
-     * @since 1.6
+     * @param   a   a floating-point value to be rounded to a
+     *          {@code long}.
+     * @return  the value of the argument rounded to the nearest
+     *          {@code long} value.
+     * @see     java.lang.Long#MAX_VALUE
+     * @see     java.lang.Long#MIN_VALUE
      */
-    public static double nextUp(double d) {
-        if( Double.isNaN(d) || d == Double.POSITIVE_INFINITY)
-            return d;
-        else {
-            d += 0.0d;
-            return Double.longBitsToDouble(Double.doubleToRawLongBits(d) + ((d >= 0.0d)?+1L:-1L));
+    public static long round(double a) {
+        long longBits = Double.doubleToRawLongBits(a);
+        long biasedExp = (longBits & DoubleConsts.EXP_BIT_MASK)
+                >> (DoubleConsts.SIGNIFICAND_WIDTH - 1);
+        long shift = (DoubleConsts.SIGNIFICAND_WIDTH - 2
+                + DoubleConsts.EXP_BIAS) - biasedExp;
+        if ((shift & -64) == 0) { // shift >= 0 && shift < 64
+            // a is a finite number such that pow(2,-64) <= ulp(a) < 1
+            long r = ((longBits & DoubleConsts.SIGNIF_BIT_MASK)
+                    | (DoubleConsts.SIGNIF_BIT_MASK + 1));
+            if (longBits < 0) {
+                r = -r;
+            }
+            // In the comments below each Java expression evaluates to the value
+            // the corresponding mathematical expression:
+            // (r) evaluates to a / ulp(a)
+            // (r >> shift) evaluates to floor(a * 2)
+            // ((r >> shift) + 1) evaluates to floor((a + 1/2) * 2)
+            // (((r >> shift) + 1) >> 1) evaluates to floor(a + 1/2)
+            return ((r >> shift) + 1) >> 1;
+        } else {
+            // a is either
+            // - a finite number with abs(a) < exp(2,DoubleConsts.SIGNIFICAND_WIDTH-64) < 1/2
+            // - a finite number with ulp(a) >= 1 and hence a is a mathematical integer
+            // - an infinity or NaN
+            return (long) a;
         }
     }
     
