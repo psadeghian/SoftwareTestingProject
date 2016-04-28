@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="Pashas-Mac.local" id="0" name="MinTest" package="min" skipped="0" tests="1" time="0.165" timestamp="2016-04-28T03:25:12">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="coverage.summaryxml.dir" value="reports/cobertura-summary-xml" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/classes" />
+
+          <property name="reports.html.dir" value="reports/junit-html" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Users/Pasha/ant" />
+
+          <property name="java.runtime.version" value="1.8.0_73-b02" />
+
+          <property name="cobertura.dir" value="../.." />
+
+          <property name="user.name" value="Pasha" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib" />
+
+          <property name="reports.dir" value="reports" />
+
+          <property name="ant.project.default-target" value="coverage" />
+
+          <property name="ant.project.name" value="test.project" />
+
+          <property name="java.version" value="1.8.0_73" />
+
+          <property name="coverage.html.dir" value="reports/cobertura-html" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="classes.dir" value="classes" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/Pasha/cobertura-2.1.1/projects/min/build.xml" />
+
+          <property name="os.version" value="10.11.4" />
+
+          <property name="ant.file.test.project" value="/Users/Pasha/cobertura-2.1.1/projects/min/build.xml" />
+
+          <property name="ant.file.type.test.project" value="file" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.73-b02" />
+
+          <property name="ant.library.dir" value="/Users/Pasha/ant/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="reports.xml.dir" value="reports/junit-xml" />
+
+          <property name="user.home" value="/Users/Pasha" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="coverage.xml.dir" value="reports/cobertura-xml" />
+
+          <property name="java.library.path" value="/Users/Pasha/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner min.MinTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Pasha/cobertura-2.1.1/projects/min/reports/junit-xml/TEST-min.MinTest.xml crashfile=/Users/Pasha/cobertura-2.1.1/projects/min/junitvmwatcher953778360863723657.properties propsfile=/Users/Pasha/cobertura-2.1.1/projects/min/junit9049572795311824608.properties" />
+
+          <property name="java.class.path" value="/Users/Pasha/cobertura-2.1.1/projects/min/instrumented:/Users/Pasha/cobertura-2.1.1/projects/min/classes:/Users/Pasha/cobertura-2.1.1/cobertura-2.1.1-javadoc.jar:/Users/Pasha/cobertura-2.1.1/cobertura-2.1.1-sources.jar:/Users/Pasha/cobertura-2.1.1/cobertura-2.1.1.jar:/Users/Pasha/cobertura-2.1.1/lib/asm-5.0.1.jar:/Users/Pasha/cobertura-2.1.1/lib/asm-analysis-5.0.1.jar:/Users/Pasha/cobertura-2.1.1/lib/asm-commons-5.0.1.jar:/Users/Pasha/cobertura-2.1.1/lib/asm-tree-5.0.1.jar:/Users/Pasha/cobertura-2.1.1/lib/asm-util-5.0.1.jar:/Users/Pasha/cobertura-2.1.1/lib/commons-lang3-3.3.2.jar:/Users/Pasha/cobertura-2.1.1/lib/hamcrest-core-1.3.jar:/Users/Pasha/cobertura-2.1.1/lib/jaxen-1.1.4.jar:/Users/Pasha/cobertura-2.1.1/lib/jetty-6.1.14.jar:/Users/Pasha/cobertura-2.1.1/lib/jetty-util-6.1.14.jar:/Users/Pasha/cobertura-2.1.1/lib/junit-4.11.jar:/Users/Pasha/cobertura-2.1.1/lib/logback-classic-1.0.13.jar:/Users/Pasha/cobertura-2.1.1/lib/logback-core-1.0.13.jar:/Users/Pasha/cobertura-2.1.1/lib/oro-2.0.8.jar:/Users/Pasha/cobertura-2.1.1/lib/servlet-api-2.5-6.1.14.jar:/Users/Pasha/cobertura-2.1.1/lib/slf4j-api-1.7.5.jar:/Users/Pasha/ant/lib/ant-launcher.jar:/Users/Pasha/ant/lib/ant.jar:/Users/Pasha/ant/lib/ant-junit.jar:/Users/Pasha/ant/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/9r/pkxqnbks7799nkh6wf9ygbkw0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="instrumented.dir" value="instrumented" />
+
+          <property name="java.ext.dirs" value="/Users/Pasha/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/Pasha/cobertura-2.1.1/projects/min" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="basedir" value="/Users/Pasha/cobertura-2.1.1/projects/min" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Users/Pasha/ant/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="src.dir" value="src" />
+
+          <property name="ant.project.invoked-targets" value="coverage" />
+
+      </properties>
+
+      <testcase classname="min.MinTest" name="testMin" time="0.119" />
+
+      <system-out><![CDATA[23:25:12,933 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+23:25:12,933 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+23:25:12,933 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/Users/Pasha/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+23:25:12,933 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+23:25:12,933 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/Pasha/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+23:25:12,933 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/Pasha/cobertura-2.1.1/cobertura-2.1.1.jar!/logback.xml]
+23:25:12,943 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@7c30a502 - URL [jar:file:/Users/Pasha/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml] is not of type file
+23:25:12,970 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+23:25:12,971 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+23:25:12,977 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+23:25:12,994 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+23:25:13,016 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [net.sourceforge.cobertura] to INFO
+23:25:13,016 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+23:25:13,016 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+23:25:13,017 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+23:25:13,018 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@49e4cb85 - Registering current configuration as safe fallback point
+
+]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>
